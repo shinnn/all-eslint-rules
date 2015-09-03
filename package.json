@@ -1,0 +1,33 @@
+{
+  "name": "all-eslint-rules",
+  "version": "1.0.0",
+  "description": "An array of the all available ESLint rules",
+  "repository": "shinnn/all-eslint-rules",
+  "scripts": {
+    "pretest": "eslint --config @shinnn index.js test.js",
+    "test": "node --strong_mode --harmony_arrow_functions test.js"
+  },
+  "license": "MIT",
+  "files": [
+    "index.json"
+  ],
+  "keywords": [
+    "eslint",
+    "setting",
+    "config",
+    "configuration",
+    "array",
+    "list",
+    "rule",
+    "rules"
+  ],
+  "dependencies": {
+    "eslint": "^1.3.1"
+  },
+  "devDependencies": {
+    "@shinnn/eslint-config": "^0.0.4",
+    "array-difference": "^0.0.1",
+    "ava": "^0.1.0",
+    "fetch-cheerio-object": "^1.0.0"
+  }
+}
