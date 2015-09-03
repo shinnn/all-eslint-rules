@@ -9,7 +9,7 @@
   },
   "license": "MIT",
   "files": [
-    "index.json"
+    "index.js"
   ],
   "keywords": [
     "eslint",
