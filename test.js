@@ -5,7 +5,7 @@ const arrayDifference = require('array-difference');
 const eslintRules = require('.');
 const fetchCheerioObject = require('fetch-cheerio-object');
 
-test('The array includes all the ESLint rules.', async t => {
+test('The array includes all the ESLint rules.', async function runTest(t) {
   t.plan(1);
 
   const $ = await fetchCheerioObject('http://eslint.org/docs/rules/');

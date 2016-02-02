@@ -5,7 +5,7 @@
   "repository": "shinnn/all-eslint-rules",
   "scripts": {
     "pretest": "eslint --parser babel-eslint --config @shinnn index.js test.js",
-    "test": "node --throw-deprecation --track-heap-objects node_modules/.bin/ava"
+    "test": "node --throw-deprecation --track-heap-objects node_modules/.bin/ava --verbose"
   },
   "license": "MIT",
   "files": [
@@ -27,8 +27,8 @@
   "devDependencies": {
     "@shinnn/eslint-config": "^1.4.0",
     "array-difference": "^0.0.1",
-    "ava": "sindresorhus/ava#7e13552fb5e4ca4966dab93c87ceb167f3a56583",
-    "babel-eslint": "^5.0.0-beta6",
+    "ava": "^0.11.0",
+    "babel-eslint": "^5.0.0-beta9",
     "fetch-cheerio-object": "^1.0.1"
   }
 }
