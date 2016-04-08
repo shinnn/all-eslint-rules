@@ -1,11 +1,9 @@
-'use strict';
+import test from 'ava';
+import arrayDifference from 'array-difference';
+import eslintRules from '.';
+import fetchCheerioObject from 'fetch-cheerio-object';
 
-const test = require('ava');
-const arrayDifference = require('array-difference');
-const eslintRules = require('.');
-const fetchCheerioObject = require('fetch-cheerio-object');
-
-test('The array includes all the ESLint rules.', async function runTest(t) {
+test('The array includes all the ESLint rules.', async function(t) {
   t.plan(1);
 
   const $ = await fetchCheerioObject('http://eslint.org/docs/rules/');
@@ -17,5 +15,5 @@ test('The array includes all the ESLint rules.', async function runTest(t) {
   .get();
 
   const diff = arrayDifference(eslintRules, rulesOnWebsite);
-  t.same(diff, []);
+  t.deepEqual(diff, []);
 });

@@ -4,7 +4,7 @@
   "description": "An array of the all available ESLint rules",
   "repository": "shinnn/all-eslint-rules",
   "scripts": {
-    "_pretest": "eslint --parser babel-eslint --config @shinnn index.js test.js",
+    "pretest": "eslint --fix --parser babel-eslint --config @shinnn index.js test.js",
     "test": "node --throw-deprecation --track-heap-objects node_modules/.bin/ava --verbose"
   },
   "license": "MIT",
@@ -25,13 +25,13 @@
     "rules"
   ],
   "dependencies": {
-    "eslint": "^2.0.0"
+    "eslint": "^2.7.0"
   },
   "devDependencies": {
-    "@shinnn/eslint-config": "^1.4.0",
+    "@shinnn/eslint-config": "^2.1.0",
     "array-difference": "^0.0.1",
-    "ava": "^0.11.0",
-    "babel-eslint": "^5.0.0-beta9",
+    "ava": "^0.14.0",
+    "babel-eslint": "^6.0.2",
     "fetch-cheerio-object": "^1.0.1"
   }
 }
