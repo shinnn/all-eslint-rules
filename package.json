@@ -25,13 +25,13 @@
     "rules"
   ],
   "dependencies": {
-    "eslint": "^2.7.0"
+    "eslint": "^2.11.1"
   },
   "devDependencies": {
-    "@shinnn/eslint-config": "^2.1.0",
+    "@shinnn/eslint-config": "^2.3.0",
     "array-difference": "^0.0.1",
-    "ava": "^0.14.0",
-    "babel-eslint": "^6.0.2",
+    "ava": "^0.15.1",
+    "babel-eslint": "^6.0.4",
     "fetch-cheerio-object": "^1.0.1"
   }
 }

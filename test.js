@@ -3,7 +3,7 @@ import arrayDifference from 'array-difference';
 import eslintRules from '.';
 import fetchCheerioObject from 'fetch-cheerio-object';
 
-test('The array includes all the ESLint rules.', async function(t) {
+test('The array includes all the ESLint rules.', async t => {
   t.plan(1);
 
   const $ = await fetchCheerioObject('http://eslint.org/docs/rules/');
