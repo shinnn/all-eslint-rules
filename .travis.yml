@@ -1,8 +1,8 @@
 git:
-  depth: 2
+  depth: 1
 branches:
   except: /^v\d/
 language: node_js
-node_js: stable
+node_js: node
 notifications:
   email: false
