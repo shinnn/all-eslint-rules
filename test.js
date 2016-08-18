@@ -10,7 +10,7 @@ test('The array includes all the ESLint rules.', async t => {
   const rulesOnWebsite = $('h2')
   .eq(0)
   .nextUntil('h2:contains(Removed)')
-  .find('li a')
+  .find('td a')
   .map((i, el) => $(el).attr('href'))
   .get();
 
