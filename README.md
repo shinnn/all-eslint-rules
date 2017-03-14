@@ -2,10 +2,8 @@
 
 [![NPM version](https://img.shields.io/npm/v/all-eslint-rules.svg)](https://www.npmjs.com/package/all-eslint-rules)
 [![Build Status](https://travis-ci.org/shinnn/all-eslint-rules.svg?branch=master)](https://travis-ci.org/shinnn/all-eslint-rules)
-[![Dependency Status](https://david-dm.org/shinnn/all-eslint-rules.svg)](https://david-dm.org/shinnn/all-eslint-rules)
-[![devDependency Status](https://david-dm.org/shinnn/all-eslint-rules/dev-status.svg)](https://david-dm.org/shinnn/all-eslint-rules#info=devDependencies)
 
-An array of the all available [ESLint rules](http://eslint.org/docs/rules/)
+An [array](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array) of the all [ESLint rules](http://eslint.org/docs/rules/)
 
 ```javascript
 [
