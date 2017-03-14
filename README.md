@@ -7,11 +7,11 @@
 
 An array of the all available [ESLint rules](http://eslint.org/docs/rules/)
 
-```js
+```javascript
 [
-  'no-alert',
-  'no-array-constructor',
-  'no-bitwise',
+  'accessor-pairs',
+  'array-bracket-spacing',
+  'array-callback-return',
   // ...
 ]
 ```
@@ -34,8 +34,17 @@ const allEslintRules = require('all-eslint-rules');
 
 Type: `Array` of `String`
 
+The array contains the names of all ESLint rules included in the [`eslint:all`](http://eslint.org/docs/user-guide/configuring#using-eslintall) preset. Deprecated/removed rules are excluded.
+
+```javascript
+allEslintRules.includes('quotes'); //=> true
+
+allEslintRules.includes('no-native-reassign'); //=> false
+allEslintRules.includes('generator-star') //=> false
+```
+
 ## License
 
-Copyright (c) 2015 - 2016 [Shinnosuke Watanabe](https://github.com/shinnn)
+Copyright (c) 2015 - 2017 [Shinnosuke Watanabe](https://github.com/shinnn)
 
 Licensed under [the MIT License](./LICENSE).

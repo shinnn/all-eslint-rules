@@ -4,8 +4,8 @@
   "description": "An array of the all available ESLint rules",
   "repository": "shinnn/all-eslint-rules",
   "scripts": {
-    "pretest": "eslint --fix .",
-    "test": "node --throw-deprecation --track-heap-objects node_modules/.bin/ava --verbose"
+    "pretest": "eslint --fix --format=codeframe .",
+    "test": "ava --serial"
   },
   "license": "MIT",
   "files": [
@@ -25,13 +25,13 @@
     "rules"
   ],
   "dependencies": {
-    "eslint": "3.15.0"
+    "eslint": "^3.17.1"
   },
   "devDependencies": {
     "@shinnn/eslint-config-node": "^3.0.0",
     "array-difference": "^0.0.1",
-    "ava": "^0.16.0",
-    "fetch-cheerio-object": "^1.0.1"
+    "ava": "^0.18.2",
+    "fetch-cheerio-object": "^1.2.0"
   },
   "eslintConfig": {
     "extends": "@shinnn/node"
