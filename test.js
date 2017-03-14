@@ -1,5 +1,5 @@
 import test from 'ava';
-import arrayDifference from 'array-difference';
+import difference from 'lodash/fp/difference';
 import allEslintRules from '.';
 import fetchCheerioObject from 'fetch-cheerio-object';
 
@@ -14,6 +14,5 @@ test('The array includes all the ESLint rules except for the deprecated or remov
   .map((i, el) => $(el).attr('href'))
   .get();
 
-  const diff = arrayDifference(allEslintRules, rulesOnWebsite);
-  t.deepEqual(diff, []);
+  t.deepEqual(difference(allEslintRules, rulesOnWebsite), []);
 });

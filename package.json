@@ -29,9 +29,9 @@
   },
   "devDependencies": {
     "@shinnn/eslint-config-node": "^3.0.0",
-    "array-difference": "^0.0.1",
     "ava": "^0.18.2",
-    "fetch-cheerio-object": "^1.2.0"
+    "fetch-cheerio-object": "^1.2.0",
+    "lodash": "^4.17.4"
   },
   "eslintConfig": {
     "extends": "@shinnn/node"
