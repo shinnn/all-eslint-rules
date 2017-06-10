@@ -25,11 +25,11 @@
     "rules"
   ],
   "dependencies": {
-    "eslint": "^3.17.1"
+    "eslint": "^4.0.0"
   },
   "devDependencies": {
     "@shinnn/eslint-config-node": "^3.0.0",
-    "ava": "^0.18.2",
+    "ava": "^0.19.1",
     "fetch-cheerio-object": "^1.2.0",
     "lodash": "^4.17.4"
   },
