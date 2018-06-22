@@ -1,39 +1,39 @@
 {
-  "name": "all-eslint-rules",
-  "version": "4.0.0",
-  "description": "An array of the all available ESLint rules",
-  "repository": "shinnn/all-eslint-rules",
-  "scripts": {
-    "pretest": "eslint --fix --format=codeframe .",
-    "test": "ava --serial"
-  },
-  "license": "MIT",
-  "files": [
-    "index.js"
-  ],
-  "keywords": [
-    "eslint",
-    "setting",
-    "config",
-    "configs",
-    "configuration",
-    "arr",
-    "ary",
-    "array",
-    "list",
-    "rule",
-    "rules"
-  ],
-  "dependencies": {
-    "eslint": "^4.0.0"
-  },
-  "devDependencies": {
-    "@shinnn/eslint-config-node": "^3.0.0",
-    "ava": "^0.19.1",
-    "fetch-cheerio-object": "^1.2.0",
-    "lodash": "^4.17.4"
-  },
-  "eslintConfig": {
-    "extends": "@shinnn/node"
-  }
+	"name": "all-eslint-rules",
+	"version": "4.0.0",
+	"description": "An array of the all available ESLint rules",
+	"repository": "shinnn/all-eslint-rules",
+	"scripts": {
+		"pretest": "eslint --fix --format=codeframe .",
+		"test": "ava --serial"
+	},
+	"license": "MIT",
+	"files": [
+		"index.js"
+	],
+	"keywords": [
+		"eslint",
+		"setting",
+		"config",
+		"configs",
+		"configuration",
+		"arr",
+		"ary",
+		"array",
+		"list",
+		"rule",
+		"rules"
+	],
+	"dependencies": {
+		"eslint": "^5.0.0"
+	},
+	"devDependencies": {
+		"@shinnn/eslint-config-node": "^5.0.0",
+		"ava": "^1.0.0-beta.6",
+		"fetch-cheerio-object": "^1.2.0",
+		"lodash": "^4.17.10"
+	},
+	"eslintConfig": {
+		"extends": "@shinnn/node"
+	}
 }
