@@ -1,6 +1,6 @@
 # all-eslint-rules
 
-[![NPM version](https://img.shields.io/npm/v/all-eslint-rules.svg)](https://www.npmjs.com/package/all-eslint-rules)
+[![npm version](https://img.shields.io/npm/v/all-eslint-rules.svg)](https://www.npmjs.com/package/all-eslint-rules)
 [![Build Status](https://travis-ci.org/shinnn/all-eslint-rules.svg?branch=master)](https://travis-ci.org/shinnn/all-eslint-rules)
 
 An [array](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array) of the all [ESLint rules](http://eslint.org/docs/rules/)
@@ -16,7 +16,7 @@ An [array](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Ob
 
 ## Installation
 
-[Use npm](https://docs.npmjs.com/cli/install).
+[Use](https://docs.npmjs.com/cli/install) [npm](https://docs.npmjs.com/getting-started/what-is-npm).
 
 ```
 npm install all-eslint-rules
@@ -43,6 +43,4 @@ allEslintRules.includes('generator-star') //=> false
 
 ## License
 
-Copyright (c) 2015 - 2017 [Shinnosuke Watanabe](https://github.com/shinnn)
-
-Licensed under [the MIT License](./LICENSE).
+[ISC License](./LICENSE) © 2018 Shinnosuke Watanabe
