@@ -1,15 +1,15 @@
 # all-eslint-rules
 
 [![npm version](https://img.shields.io/npm/v/all-eslint-rules.svg)](https://www.npmjs.com/package/all-eslint-rules)
-[![Build Status](https://travis-ci.org/shinnn/all-eslint-rules.svg?branch=master)](https://travis-ci.org/shinnn/all-eslint-rules)
+[![Build Status](https://travis-ci.com/shinnn/all-eslint-rules.svg?branch=master)](https://travis-ci.com/shinnn/all-eslint-rules)
 
-An [array](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array) of the all [ESLint rules](http://eslint.org/docs/rules/)
+An [`Array`](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array) of the all [ESLint rules](https://eslint.org/docs/rules/)
 
 ```javascript
 [
   'accessor-pairs',
+  'array-bracket-newline',
   'array-bracket-spacing',
-  'array-callback-return',
   // ...
 ]
 ```
@@ -30,9 +30,9 @@ const allEslintRules = require('all-eslint-rules');
 
 ### allEslintRules
 
-Type: `Array` of `String`
+Type: `Array<string>`
 
-The array contains the names of all ESLint rules included in the [`eslint:all`](http://eslint.org/docs/user-guide/configuring#using-eslintall) preset. Deprecated/removed rules are excluded.
+The `Array` contains the names of all ESLint rules included in the [`eslint:all`](https://eslint.org/docs/user-guide/configuring#using-eslintall) preset. Deprecated/removed rules are excluded.
 
 ```javascript
 allEslintRules.includes('quotes'); //=> true
