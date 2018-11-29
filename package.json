@@ -3,11 +3,11 @@
 	"version": "5.0.0",
 	"description": "An array of the all available ESLint rules",
 	"repository": "shinnn/all-eslint-rules",
-	"scripts": {
-		"pretest": "eslint --fix --format=codeframe .",
-		"test": "ava --serial"
-	},
 	"license": "MIT",
+	"scripts": {
+		"pretest": "eslint .",
+		"test": "node test.js"
+	},
 	"files": [
 		"index.js"
 	],
@@ -25,15 +25,15 @@
 		"rules"
 	],
 	"dependencies": {
-		"eslint": "^5.0.0"
+		"eslint": "^5.9.0"
 	},
 	"devDependencies": {
-		"@shinnn/eslint-config-node": "^5.0.0",
-		"ava": "^1.0.0-beta.6",
+		"@shinnn/eslint-config": "^6.8.1",
 		"fetch-cheerio-object": "^1.2.0",
-		"lodash": "^4.17.10"
+		"lodash": "^4.17.11",
+		"tape": "^4.9.1"
 	},
 	"eslintConfig": {
-		"extends": "@shinnn/node"
+		"extends": "@shinnn"
 	}
 }
