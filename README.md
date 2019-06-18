@@ -16,7 +16,7 @@ An [`Array`](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_
 
 ## Installation
 
-[Use](https://docs.npmjs.com/cli/install) [npm](https://docs.npmjs.com/getting-started/what-is-npm).
+[Use](https://docs.npmjs.com/cli/install) [npm](https://docs.npmjs.com/about-npm/).
 
 ```
 npm install all-eslint-rules
@@ -30,7 +30,7 @@ const allEslintRules = require('all-eslint-rules');
 
 ### allEslintRules
 
-Type: `Array<string>`
+Type: `string[]`
 
 The `Array` contains the names of all ESLint rules included in the [`eslint:all`](https://eslint.org/docs/user-guide/configuring#using-eslintall) preset. Deprecated/removed rules are excluded.
 
@@ -43,4 +43,4 @@ allEslintRules.includes('generator-star') //=> false
 
 ## License
 
-[ISC License](./LICENSE) © 2018 Shinnosuke Watanabe
+[ISC License](./LICENSE) © 2018 - 2019 Watanabe Shinnosuke
