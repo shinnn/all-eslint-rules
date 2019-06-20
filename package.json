@@ -7,7 +7,7 @@
 	"license": "ISC",
 	"scripts": {
 		"pretest": "eslint .",
-		"test": "node test.js"
+		"test": "coverage test.mjs"
 	},
 	"files": [
 		"index.js"
@@ -26,12 +26,13 @@
 		"rules"
 	],
 	"dependencies": {
-		"eslint": "^6.0.1"
+		"eslint": "^6.0.1",
+		"inspect-with-kind": "^1.0.5",
+		"lodash": "^4.17.11"
 	},
 	"devDependencies": {
 		"@shinnn/eslint-config": "^7.0.0-0",
-		"fetch-cheerio-object": "^1.3.0",
-		"lodash": "^4.17.11",
+		"coverage": "^0.4.1",
 		"testit": "^3.1.0"
 	},
 	"eslintConfig": {

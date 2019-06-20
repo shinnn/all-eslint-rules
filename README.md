@@ -2,16 +2,15 @@
 
 [![npm version](https://img.shields.io/npm/v/all-eslint-rules.svg)](https://www.npmjs.com/package/all-eslint-rules)
 [![Build Status](https://travis-ci.com/shinnn/all-eslint-rules.svg?branch=master)](https://travis-ci.com/shinnn/all-eslint-rules)
+[![codecov](https://codecov.io/gh/shinnn/all-eslint-rules/branch/master/graph/badge.svg)](https://codecov.io/gh/shinnn/all-eslint-rules)
 
-An [`Array`](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array) of the all [ESLint rules](https://eslint.org/docs/rules/)
+Get all available [ESLint](https://eslint.org) rules
 
 ```javascript
-[
-  'accessor-pairs',
-  'array-bracket-newline',
-  'array-bracket-spacing',
-  // ...
-]
+const allEslintRules = require('all-eslint-rules');
+
+allEslintRules();
+//=> ['accessor-pairs', 'array-bracket-newline', 'array-bracket-spacing', ...]
 ```
 
 ## Installation
@@ -28,17 +27,35 @@ npm install all-eslint-rules
 const allEslintRules = require('all-eslint-rules');
 ```
 
-### allEslintRules
+### allEslintRules([*options*])
 
-Type: `string[]`
+*options*: `Object | CLIEngine`  
+Return: `string[]`
 
-The `Array` contains the names of all ESLint rules included in the [`eslint:all`](https://eslint.org/docs/user-guide/configuring#using-eslintall) preset. Deprecated/removed rules are excluded.
+It returns an `Array` of available [ESLint](https://github.com/eslint/eslint) rule names – [the built-in ones](https://eslint.org/docs/rules/) and the ones defined by external [plugins](https://eslint.org/docs/user-guide/configuring#configuring-plugins). [Deprecated](https://eslint.org/docs/rules/#deprecated) rules are excluded.
 
 ```javascript
-allEslintRules.includes('quotes'); //=> true
+const rules = allEslintRules();
 
-allEslintRules.includes('no-native-reassign'); //=> false
-allEslintRules.includes('generator-star') //=> false
+// Both indent-legacy and no-spaced-func are deprecated.
+rules.includes('indent-legacy'); //=> false
+rules.includes('no-spaced-func'); //=> false
+```
+
+The optional parameter accepts either a plain `Object` to set [`CLIEngine`](https://eslint.org/docs/developer-guide/nodejs-api#cliengine) options or an already instantiated `CLIEngine`, and affects the result.
+
+```javascript
+// When eslint-plugin-promise https://www.npmjs.com/package/eslint-plugin-promise is installed
+
+allEslintRules({
+  useEslintrc: false,
+  plugins: []
+}).includes('promise/param-names'); //=> false
+
+allEslintRules({
+  useEslintrc: false,
+  plugins: ['promise']
+}).includes('promise/param-names'); //=> true
 ```
 
 ## License
