@@ -1,7 +1,7 @@
 # all-eslint-rules
 
 [![npm version](https://img.shields.io/npm/v/all-eslint-rules.svg)](https://www.npmjs.com/package/all-eslint-rules)
-[![Build Status](https://travis-ci.com/shinnn/all-eslint-rules.svg?branch=master)](https://travis-ci.com/shinnn/all-eslint-rules)
+[![GitHub Actions](https://action-badges.now.sh/shinnn/all-eslint-rules)](https://wdp9fww0r9.execute-api.us-west-2.amazonaws.com/production/results/shinnn/all-eslint-rules)
 [![codecov](https://codecov.io/gh/shinnn/all-eslint-rules/branch/master/graph/badge.svg)](https://codecov.io/gh/shinnn/all-eslint-rules)
 
 Get all available [ESLint](https://eslint.org) rules
