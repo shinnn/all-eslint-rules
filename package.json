@@ -1,7 +1,7 @@
 {
 	"name": "all-eslint-rules",
-	"version": "6.0.0-1",
-	"description": "An array of the all available ESLint rules",
+	"version": "6.0.0",
+	"description": "Get all available ESLint rules",
 	"author": "Watanabe Shinnosuke (https://github.com/shinnn)",
 	"repository": "shinnn/all-eslint-rules",
 	"license": "ISC",
